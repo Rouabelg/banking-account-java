@@ -1,4 +1,5 @@
-package cptbank;
+package cptbank ;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,7 +39,7 @@ public static void newClient(String prenom,String nom,String id,String mail,Stri
 			} 
 		else if ( mail.indexOf("@")< 0 && mail.lastIndexOf(".")<= mail.indexOf("@") && mail.lastIndexOf(".") == mail.length()) {JOptionPane.showMessageDialog(null,"mail invalide !");}
 		else if (tel.length()!=8) {
-			try { int t = Integer.parseInt(tel); } catch(Exception r){JOptionPane.showMessageDialog(null,"Tel° invalide !");}
+			try { int t = Integer.parseInt(tel); } catch(Exception r){JOptionPane.showMessageDialog(null,"Telï¿½ invalide !");}
 			}
 		else if (sexe=="Select") {JOptionPane.showMessageDialog(null,"sexe invalide");}
 		//1993-05-JJ
@@ -84,7 +85,7 @@ public static void newClient(String prenom,String nom,String id,String mail,Stri
 			
 			pst.execute();
       
-      JOptionPane.showMessageDialog(null,"Client ajouté avec succés");
+      JOptionPane.showMessageDialog(null,"Client ajoutï¿½ avec succï¿½s");
 
   
       
